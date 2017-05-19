@@ -1,44 +1,76 @@
 @CHARSET "UTF-8";
 a{
-  text-decoration: none;
+  text-decoration:none;
   color:black;
 }
-a:hover{
+a:hover {
 	color:blue;
+}
+a:hover +ul{
+  display:block;
 }
 .banner{
 	text-align:center;
 }
-.nav{
-  margin: 0;
-  padding: 0
-  height: 500px;
-  width: 180px;
-}
-li{
-  margin-bottom: 20px;
+.nav li{
   height: 32px;
+  margin-bottom: 20px;
   list-style: none;
-  display:inline;
+  line-height: 32px;
+}
+.nav ul{
+  display: none ;
+  position: absolute;
+  margin-left: 70px;
+  margin-top:-32px;
+  background-color:#DDDDDD;
+  padding: 0 10px;
+}
+.second li{
+  margin: 0;
+  padding:0;
+}
+.nav{
+  height: 800px;
+  width: 150px;
+}
+li:hover ul{
+  display: block;
 }
 .data{
-  margin-top: 50px;
   padding-left:40px;
   background: url(../images/pie-chart_graph.png) no-repeat left center;
+  background-color:#DDDDDD;
+  width: 70px;
 }
 .user{
   padding-left: 40px;
   background: url(../images/users.png) no-repeat left center;
+  background-color:#DDDDDD;
+  width: 70px;
 }
 .activity{
   padding-left: 40px;
   background: url(../images/gur-project-03.png) no-repeat left center;
+  background-color:#DDDDDD;
+  width: 70px;
 }
 .order{
   padding-left: 40px;
   background: url(../images/shopping_cart.png) no-repeat left center;
+  background-color:#DDDDDD;
+  width:70px;
 }
 .setting{
   padding-left: 40px;
   background: url(../images/options_3.png) no-repeat left center;
+  background-color:#DDDDDD;
+  width: 70px;
+}
+.condition{
+  border: 1px solid red;
+  height: 200px;
+  width: 800px;
+  margin-left: 250px;
+  margin-top: -815px;
 }
