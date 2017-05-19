@@ -3,32 +3,62 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="CSS/mainPage.css">
-    <title></title>
+    <script type="text/javascript" src="JS/jquery-3.2.0.js"></script>
+    <script type="text/javascript" src="JS/main-page.js"></script>
+    <style media="screen" type="text/css">
+      iframe{
+        border: 1px solid red;
+        width: 800px;
+        margin-left:250px;
+        margin-top:50px;
+      }
+    </style>
+    <title>首页</title>
   </head>
   <body>
     <div class="banner">
-      <img src="images/banner.png"/>			
+      <img src="images/banner.png"/>
     </div>
-    <div class="nav">
-      <ul>
-        <a href="#">
-          <li class="data">数据统计</li>
-        </a>
-        <ul>
+    <ul class="nav">
+      <li class="data">
+        <a href="#">数据统计</a>
+        <ul class="second">
+          <li> <a href="newuser.html" target="content">新用户统计</a> </li>
+          <li> <a href="income.html" target="content">营收入统计</a> </li>
+          <li> <a href="#">下订单统计</a> </li>
         </ul>
-        <a href="#">
-          <li class="user">用户管理</li>
-        </a>
-        <a href="#">
-            <li class="activity">活动管理</li>
-        </a>
-        <a href="#">
-          <li class="order">订单管理</li>
-        </a>
-        <a href="#">
-          <li class="setting">系统设置</li>
-        </a>
-      </ul>
+      </li>
+      <li class="user">
+        <a href="#">用户管理</a>
+        <ul class="second">
+          <li><a href="#">商家管理</a></li>
+          <li><a href="#">客户管理</a></li>
+        </ul>
+      </li>
+      <li class="activity">
+        <a href="#">活动管理</a>
+        <ul class="second">
+          <li><a href="#">优惠活动</a></li>
+          <li><a href="#">宣传活动</a></li>
+        </ul>
+      </li>
+      <li class="order">
+        <a href="#">订单管理</a>
+      </li>
+      <li class="setting">
+        <a href="#">系统设置</a>
+        <ul class="second">
+          <li><a href="#">修改密码</a></li>
+          <li><a href="#">系统消息</a></li>
+          <li><a href="#">角色管理</a></li>
+          <li><a href="#">权限管理</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div>
+      <div class="condition">
+      </div>
+      <iframe name="content"></iframe>
     </div>
   </body>
 </html>
