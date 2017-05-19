@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+a{
+  text-decoration: none;
+  color:black;
+}
+a:hover{
+	color:blue;
+}
+.banner{
+	text-align:center;
+}
+.nav{
+  margin: 0;
+  padding: 0
+  height: 500px;
+  width: 180px;
+}
+li{
+  margin-bottom: 20px;
+  height: 32px;
+  list-style: none;
+  display:inline;
+}
+.data{
+  margin-top: 50px;
+  padding-left:40px;
+  background: url(../images/pie-chart_graph.png) no-repeat left center;
+}
+.user{
+  padding-left: 40px;
+  background: url(../images/users.png) no-repeat left center;
+}
+.activity{
+  padding-left: 40px;
+  background: url(../images/gur-project-03.png) no-repeat left center;
+}
+.order{
+  padding-left: 40px;
+  background: url(../images/shopping_cart.png) no-repeat left center;
+}
+.setting{
+  padding-left: 40px;
+  background: url(../images/options_3.png) no-repeat left center;
+}
